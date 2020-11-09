@@ -76,6 +76,12 @@ you will set up using this guide?
     information directly in BibTeX format, and we will have integrated
     tools that will allow us to pull this information directly into
     our local database.
+\begin{equation}
+x=\sqrt{b}
+\end{equation}
+
+- If $a^2=b$ and \( b=2 \), then the solution must be
+  either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
 
 ** Acknowledgements
 In my adaptation of Org, I have benefitted immensely from the great
@@ -530,7 +536,7 @@ The following sample code produces a reasonably formatted table, with
 a numbered title above the table and a name for cross-referencing the
 table from the text anywhere in the document.
 
-See Table [[table-yield]] for an illustration of how this table shows
+See Table unknown for an illustration of how this table shows
 up in the final document.
 
 #+NAME: one
@@ -776,7 +782,7 @@ they provide.[fn:1]
   ,#+NAME: tabularx-yield-out
   ,#+CAPTION: Table formatted using tabularx and siunitx packages
   ,#+ATTR_LATEX: :environment tabularx :width 0.8\textwidth
-  ,#+ATTR_LATEX: :align @{}l{S[table-format=3.0]}{S[table-format=5.2]}@{}
+  ,#+ATTR_LATEX: :align @{}lS[table-format=3.0]S[table-format=5.2]@{}
   ,#+ATTR_LATEX: :center t :booktabs t :float t
      | State          | {{{MCONE(Average yield)}}} | {{{MCONE(Average income)}}} |
      |----------------+----------------------------+-----------------------------|
@@ -789,7 +795,7 @@ they provide.[fn:1]
 #+NAME: tabularx-yield-out
 #+CAPTION: Table formatted using tabularx and siunitx packages
 #+ATTR_LATEX: :environment tabularx :width 0.8\textwidth
-#+ATTR_LATEX: :align @{}l{S[table-format=3.0]}{S[table-format=5.2]}@{}
+#+ATTR_LATEX: :align @{}lS[table-format=3.0]S[table-format=5.2]@{}
 #+ATTR_LATEX: :center t :booktabs t :float t
 | State          | {{{MCONE(Average yield)}}} | {{{MCONE(Average income)}}} |
 |----------------+----------------------------+-----------------------------|
@@ -816,7 +822,7 @@ The following code produces a table with notes below.
   ,#+begin_table
   ,#+begin_threeparttable
   ,#+ATTR_LATEX: :environment tabularx :width 0.8\textwidth
-  ,#+ATTR_LATEX: :align @{}l{S[table-format=3.0]}{S[table-format=5.2]}@{}
+  ,#+ATTR_LATEX: :align @{}lS[table-format=3.0]S[table-format=5.2]@{}
   ,#+ATTR_LATEX: :booktabs t
   | State          | {{{MCONE(Average yield)}}} | {{{MCONE(Average income)}}} |
   |----------------+----------------------------+-----------------------------|
@@ -843,7 +849,7 @@ The following code produces a table with notes below.
 #+begin_table
 #+begin_threeparttable
 #+ATTR_LATEX: :environment tabularx :width 0.8\textwidth
-#+ATTR_LATEX: :align @{}l{S[table-format=3.0]}{S[table-format=5.2]}@{}
+#+ATTR_LATEX: :align @{}lS[table-format=3.0]S[table-format=5.2]@{}
 #+ATTR_LATEX: :booktabs t
 | State          | {{{MCONE(Average yield)}}} | {{{MCONE(Average income)}}} |
 |----------------+----------------------------+-----------------------------|
