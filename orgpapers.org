@@ -5,7 +5,7 @@
 #+COLUMNS: %25ITEM %TAGS %PRIORITY %T
 #+OPTIONS: H:4 toc:2 num:3
 #+LaTeX_CLASS: article
-#+LaTeX_CLASS_OPTIONS: [garamond]
+#+LaTeX_CLASS_OPTIONS: [a4paper,12pt]
 #+INCLUDE: default_packages.org
 #+LATEX_HEADER: \renewcommand{\TPTminimum}{\linewidth}
 #+LATEX_HEADER: \usepackage{tabularx,siunitx,booktabs}
