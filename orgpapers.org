@@ -9,11 +9,13 @@
 #+INCLUDE: default_packages.org
 #+LATEX_HEADER: \renewcommand{\TPTminimum}{\linewidth}
 #+LATEX_HEADER: \usepackage{tabularx,siunitx,booktabs}
+#+LATEX_HEADER: \usepackage{CJKutf8}
 #+LATEX_HEADER: \newcolumntype{C}{>{\centering\arraybackslash}X}
 #+LATEX_HEADER: \newcommand{\mcone}[1]{\multicolumn{1}{C}{#1}}
 #+LATEX_HEADER: \newcommand{\mcx}[2]{\multicolumn{#1}{>{\hsize=\dimexpr #1\hsize +\numexpr2*#1-2\relax\tabcolsep \relax}C}{#2}}
 #+MACRO:  MCONE @@latex:\mcone{$1}@@
 
+#+LATEX: \begin{CJK}{UTF8}{bsmi}
 
 * Introduction
 
@@ -1383,6 +1385,7 @@ add it to your org file.
   research. Journal of Statistical Software, 46(3):1–24, 1 2012.[[http://www.jstatsoft.org/v46/i03][http://www.jstatsoft.org/v46/i03]]
 + [[http://draketo.de/english/emacs/writing-papers-in-org-mode-acpd][Tutorial: Writing scientific papers for ACPD using emacs org-mode, http://draketo.de/english/emacs/writing-papers-in-org-mode-acpd]]
 + [[http://nakkaya.com/2010/09/07/writing-papers-using-org-mode/][Writing papers Using org-mode, http://nakkaya.com/2010/09/07/writing-papers-using-org-mode]]
+#+LATEX: \end{CJK}
 * Footnotes
 [fn:1] These are available at http://mirrors.ctan.org/macros/latex/required/tools/tabularx.pdf and http://mirrors.ctan.org/macros/latex/contrib/siunitx/siunitx.pdf.
 
