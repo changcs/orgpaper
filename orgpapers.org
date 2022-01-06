@@ -844,31 +844,6 @@ The following code produces a table with notes below.
 #+End_SRC
 
 
-#+NAME: threeparttable-table-yield
-#+CAPTION: Table created using tabularx, siunitx, with table notes added below using threeparttable
-#+ATTR_LATEX: :float t :options [hb] :center t
-#+begin_table
-#+begin_threeparttable
-#+ATTR_LATEX: :environment tabularx :width 0.8\textwidth
-#+ATTR_LATEX: :align @{}lS[table-format=3.0]S[table-format=5.2]@{}
-#+ATTR_LATEX: :booktabs t
-| State          | {{{MCONE(Average yield)}}} | {{{MCONE(Average income)}}} |
-|----------------+----------------------------+-----------------------------|
-| Madhya Pradesh |                        669 |                    13121.25 |
-| Haryana        |                        300 |                     2532.30 |
-| Punjab         |                        260 |                    35232.45 |
-#+attr_latex: :options [flushleft]
-#+begin_tablenotes
-#+begin_footnotesize
-  \item[] \textit{Notes}:
-    1. This table is very nice. This note is very long. But the long note wraps nicely under the table.
-    2. This is the second note. But this is not very wide.
-  \item[] \textit{Source}: http://www.indianstatistics.org}
-#+end_footnotesize
-#+end_tablenotes
-#+end_threeparttable
-#+end_table
-
 The notes use just a little bit of direct LaTeX coding. ~\item[]~
 ensures that /Note/ and /Source/ start from a separate paragraph.
 
